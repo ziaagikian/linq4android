@@ -43,15 +43,14 @@ h3. Using svn
 
 If you are using svn you need to repo my repository using the command Use this command to anonymously check out the latest project source code:
 
-svn checkout https://github.com/ziaagikian/linq4qndroid linq4android-read-only 
+svn checkout https://github.com/ziaagikian/linq4android linq4android-read-only 
 
 once the source code is downlaoded build it using jar command, or simply import the source code into your favourite ide most preferably <b>eclipse</b>.
 
 h3. Direct jar usage
 
 If you don't care about building tool you can just download the jar manually from this link.
-
-<a href="https://github.com/ziaagikian/linq4android/binary/linq4qndroid-1.0.jar">download jar</a>
+<a href="https://github.com/ziaagikian/linq4android/blob/master/binary/linq4android-1.0.jar">download jar</a>
 Then add this jar file in your android project.
 
 h2. Implementation
