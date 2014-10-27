@@ -1,6 +1,6 @@
 h1. linq4android
 
-linq4android is a project to provide Linq Query facility to android developers. It is heavily from <a href="https://code.google.com/p/diting/">diting</a>. The library provides optimized queries on collections and arrays. It is acctually the port of traditional chainable queries to android plateform in order to provide query capabilities on collections or array through chainable methods and anonymous interface like .Net's Linq. Currently the library provides the following methods.
+linq4android is a project to provide Linq Query facility to android developers. It is heavily inspired from <a href="https://code.google.com/p/diting/">diting</a>. The library provides optimized queries on collections and arrays. It is acctually the port of traditional chainable queries to android plateform in order to provide query capabilities on collections or array through chainable methods and anonymous interface like .Net's Linq. Currently the library provides the following methods.
 
     any
     cast
