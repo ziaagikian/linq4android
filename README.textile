@@ -1,0 +1,128 @@
+h1. linq4android
+
+linq4android is a project to provide Linq Query facility to android developers. It is heavily from <a href="https://code.google.com/p/diting/">diting</a>. The library provides optimized queries on collections and arrays. It is acctually the port of traditional chainable queries to android plateform in order to provide query capabilities on collections or array through chainable methods and anonymous interface like .Net's Linq. Currently the library provides the following methods.
+
+    any
+    cast
+    contact
+    contains
+    count
+    distinct
+    elementAt
+    except
+    first
+    firstOrDefault
+    groupBy
+    groupJoin
+    interset
+    join
+    last
+    lastOrDefault
+    ofType
+    orderBy
+    orderByDescending
+    reverse
+    select
+    selectMany
+    single
+    singleOrDefault
+    skip
+    skipWhile
+    take
+    takeWhile
+    toArray
+    toArrayList
+    toMap
+    union
+    where
+    zip 
+
+h2. How to use the library
+
+h3. Using svn
+
+If you are using svn you need to repo my repository using the command Use this command to anonymously check out the latest project source code:
+
+svn checkout https://github.com/ziaagikian/linq4qndroid linq4android-read-only 
+
+once the source code is downlaoded build it using jar command, or simply import the source code into your favourite ide most preferably <b>eclipse</b>.
+
+h3. Direct jar usage
+
+If you don't care about building tool you can just download the jar manually from this link.
+
+<a href="https://github.com/ziaagikian/linq4android/binary/linq4qndroid-1.0.jar">download jar</a>
+Then add this jar file in your android project.
+
+h2. Implementation
+ 
+You can implement the library as per your requirment i-e in activity, fragment, helper classes, etc. You can check demo android app for implementation, however few of the sample queries are presented belom
+
+<pre><code>
+/*********************** Select Query ****************************/
+	
+		LinqQuery<T> selectCollection = Queries.query(your_collection).select(
+				new Selector<T, TResult>() {
+
+					@Override
+					public T select(T val) {
+						// your implementation
+						return null;
+					}
+
+				});
+/********************** End of Select Query *********************/
+</code></pre>
+
+<pre><code>
+/*********************** Where Query ***************************/
+
+		LinqQuery<T> whereList = Queries.query(your_collection).where(
+				new Predicate<T>() {
+
+					@Override
+					public boolean evaluate(T val) {
+						// your conition
+						return false;
+					}
+				});
+
+/********************** End of Where Query *********************/
+</code></pre>
+
+<pre><code>
+
+/*********************Select Where Query ***************************/		
+	LinqQuery<T> dummyList = Queries.query(your_collection).select(new Selector<T, TResult>() {
+
+			@Override
+			public TResult select(T arg0) {
+
+				//your implementation;
+				return null;
+			}
+		}).where(new Predicate<TResult>() {
+			
+			@Override
+			public boolean evaluate(TResult arg0) {
+				//your condition;
+				return false;
+			}
+		});
+
+/***************** End of Select Where Query *********************/
+</code></pre>
+
+h3. Try library and implement queries as per your requirement, in case of any ambiguity just post your questions on Github, by creating issues on Github.
+
+h2. License
+
+linq4android is licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License 2.0</a>.
+
+h2. Demo app
+
+If you want to see the capabilities of the library you can try out the demo app attached herewith. 
+
+h2. Issues
+
+Please report bugs, tell me about your problems or request features by creating issues on GitHub.
