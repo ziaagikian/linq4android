@@ -1,6 +1,6 @@
 h1. linq4android
 
-linq4android is a project to provide Linq Query facility to android developers. It is heavily inspired from <a href="https://code.google.com/p/diting/">diting</a>. The library provides optimized queries on collections and arrays. It is acctually the port of traditional chainable queries to android plateform in order to provide query capabilities on collections or array through chainable methods and anonymous interface like .Net's Linq. Currently the library provides the following methods.
+linq4android is a project to provide Linq Query facility to android developers. It is heavily inspired from <a href="https://code.google.com/p/diting/">diting</a>. The library provides optimized queries on collections and arrays. It is actually the port of traditional chainable queries to android plateform in order to provide query capabilities on collections or array through chainable methods and anonymous interface like .Net's Linq. Currently the library provides the following methods.
     any
     cast
     contact
@@ -110,8 +110,6 @@ You can implement the library as per your requirment i-e in activity, fragment, 
 
 /***************** End of Select Where Query *********************/
 </code></pre>
-
-h5. Try library and implement queries as per your requirement, in case of any ambiguity just post your questions on Github, by creating issues on Github.
 
 h2. License
 
